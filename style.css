@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+.logo {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logo-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.logo-slide img {
+  height: 100px;
+}
+
+section {
+  overflow: hidden;
+  background-image: url(ba.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; /* For overlay or positioning */
+  min-height: 100vh; /* Ensures the section takes at least full viewport height */
+  background-color: rgba(0, 0, 0, 0.5); /* Fallback color */
+}
+
+.main2 {
+  margin-top: 57px;
+  position: relative;
+  width: 15%;
+  box-shadow: 0 0 25px #0f0529;
+  filter: drop-shadow(0 0 1rem black);
+  border-radius: 20px;
+}
+
+.main {
+  top: 165px;
+  z-index: 999;
+  width: 20%;
+  border-radius: 10px;
+  box-shadow: 0 0 25px white;
+}
+
+section h2,
+h4 {
+  color: white;
+  font-family: "Oswald";
+}
+
+section h2 {
+  margin-top: 20px;
+}
+
+section h4 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+section span {
+  position: relative;
+}
+
+section button {
+  background-color: #c71515;
+  padding: 20px;
+  color: #f5e1fd;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: "Poppins";
+  border: 2px solid #f5e1fd;
+  transition: 0.5s ease;
+}
+
+section button:hover {
+  background-color: white;
+  transform: translateY(-5px);
+  color: #c71515;
+}
+
+@media (max-width: 768px) {
+  .main2 {
+    position: relative;
+    width: 39%;
+    box-shadow: 0 0 25px #0f0529;
+    filter: drop-shadow(0 0 1rem black);
+    border-radius: 20px;
+  }
+
+  .main {
+    top: 218px;
+    z-index: 999;
+    width: 100%;
+  }
+
+  section {
+    overflow: hidden;
+    background-image: url(ba.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 50%;
+  }
+}
